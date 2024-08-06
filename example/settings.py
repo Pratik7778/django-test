@@ -93,7 +93,7 @@ DATABASES = {
       'NAME': 'postgres',
       'USER': 'postgres',
       'PASSWORD': 'Pratik@123',
-      'HOST': 'localhost',
+      'HOST': 'zerone-addon-30-11-postgresql.zerone-23-30.svc.cluster.local',
       'PORT': '5432', 
       }
 }
