@@ -6,7 +6,7 @@ WORKDIR /app
 COPY requirements.txt /app
 RUN pip3 install -r requirements.txt --no-cache-dir
 # RUN pip3 install psycopg2-binary
-RUN apk add postgresql-server-dev-13.0
+RUN apk add musl-dev postgresql-dev libpq
 RUN pip3 install psycopg2
 COPY . /app 
 ENTRYPOINT ["python3"] 
